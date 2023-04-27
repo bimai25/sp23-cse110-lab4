@@ -1,0 +1,2 @@
+1. The bug is that `num1` and `num2` were being stored as strings, so when they were "added" together, the strings were being concatenated.
+2. When getting `num1` and `num2`, we need to parse the string into an int. We can use the call to get the string as parameter for the `parseInt()` function which takes in a string and returns an int if the parameter is an int. The fix can be found [here](./fix.png).
